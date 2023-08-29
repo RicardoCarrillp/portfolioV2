@@ -1,5 +1,6 @@
 /* GENERAL */
 
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -159,6 +160,7 @@ section {
 
 .section-container {
   display: flex;
+  justify-content: center;
 }
 
 /* PROFILE SECTION */
@@ -301,7 +303,7 @@ section {
 }
 
 .image_wrapper img {
-  width: 90%;
+  width: 10vw;
 }
 .about-pic {
   border-radius: 2rem;
@@ -314,18 +316,14 @@ section {
 }
 
 .details-container {
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0.4em 1em 0.4em;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  .marquee{
-    img{
-      width: 13vw;
-    }
-  }
+
 }
 
 

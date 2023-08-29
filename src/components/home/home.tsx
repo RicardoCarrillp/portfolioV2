@@ -112,12 +112,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    src="./assets/arrow.png"
-                    alt="Arrow icon"
-                    className="icon arrow"
-                    // onClick="location.href='./#experience'"
-                />
+           
             </section>
             <section id="experience">
                 <p className="section__text__p1">Explore My</p>
@@ -135,12 +130,7 @@ export const Home = () => {
                         </div>
 
                 </div>
-                <img
-                    src="./assets/arrow.png"
-                    alt="Arrow icon"
-                    className="icon arrow"
-                    // onClick={()=>location.href='./#projects'}
-                />
+            
             </section>
             <section id="projects">
                 <p className="section__text__p1">Browse My Recent</p>
@@ -222,12 +212,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    src="./assets/arrow.png"
-                    alt="Arrow icon"
-                    className="icon arrow"
-                    // onclick="location.href='./#projects'"
-                />
+          
             </section>
             <section id="contact">
                 <p className="section__text__p1">Get in Touch</p>
