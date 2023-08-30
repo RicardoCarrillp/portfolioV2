@@ -63,7 +63,7 @@ export const Home = () => {
                     <div className="btn-container">
                         <button
                             className="btn btn-color-2"
-                            onClick={()=>{window.open(require('../../assets/resume-example.pdf'))}}
+                            onClick={()=>{window.open(require('../../assets/Curriculum Ricardo Carrillo - ES.pdf'))}}
                         >
                             Download CV
                         </button>
