@@ -12,6 +12,35 @@ export const Home = () => {
         , require('../../assets/html.png')
     ]
 
+    const projects = [
+      {
+        title: "Covid Stats",
+        techImgs: [require("../../assets/angular.png")],
+        githubUrl: "https://github.com/RicardoCarrillp/covid-test",
+        url: "https://covid-test-beta.vercel.app/login",
+      },
+      {
+        title: "Contact book",
+        techImgs: [
+          require("../../assets/angular.png"),
+          require("../../assets/nodejs.png"),
+        ],
+        githubUrl: "https://github.com/RicardoCarrillp/contacts_frontendt",
+        url: "https://github.com/RicardoCarrillp/contacts_frontendt",
+      },
+      {
+        title: "Pokedex",
+        techImgs: [require("../../assets/React-icon.png")],
+        githubUrl: "https://github.com/RicardoCarrillp/pokedex",
+        url: "https://pokedex-v22.vercel.app/",
+      },
+      {
+        title: "Rick and Morty App",
+        techImgs: [require("../../assets/angular.png")],
+        githubUrl: "https://github.com/RicardoCarrillp/RickandMorty",
+        url: "https://rickand-morty-delta.vercel.app/home",
+      },
+    ];
 
     function toggleMenu() {
         const menu = document.querySelector(".menu-links");
@@ -29,10 +58,18 @@ export const Home = () => {
                 <div className="logo">Portafolio</div>
                 <div>
                     <ul className="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -45,16 +82,32 @@ export const Home = () => {
                         <span></span>
                     </div>
                     <div className="menu-links">
-                        <li><a href="#about" onClick={toggleMenu}>About</a></li>
-                        <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
-                        <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-                        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+                        <li>
+                            <a href="#about" onClick={toggleMenu}>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience" onClick={toggleMenu}>
+                                Experience
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" onClick={toggleMenu}>
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" onClick={toggleMenu}>
+                                Contact
+                            </a>
+                        </li>
                     </div>
                 </div>
             </nav>
             <section id="profile">
                 <div className="section__pic-container">
-                    <img src={profile} alt="John Doe profile picture"/>
+                    <img src={profile} alt="John Doe profile picture" />
                 </div>
                 <div className="section__text">
                     <p className="section__text__p1">Hello, I'm</p>
@@ -63,7 +116,11 @@ export const Home = () => {
                     <div className="btn-container">
                         <button
                             className="btn btn-color-2"
-                            onClick={()=>{window.open(require('../../assets/Curriculum Ricardo Carrillo - ES.pdf'))}}
+                            onClick={() => {
+                                window.open(
+                                    require("../../assets/Curriculum Ricardo Carrillo - ES.pdf")
+                                );
+                            }}
                         >
                             Download CV
                         </button>
@@ -73,13 +130,17 @@ export const Home = () => {
                             src={require("../../assets/linkedin.png")}
                             alt="My LinkedIn profile"
                             className="icon"
-                            onClick={() => openUrl('https://www.linkedin.com/in/ricardo-carrillo-082117129/')}
+                            onClick={() =>
+                                openUrl(
+                                    "https://www.linkedin.com/in/ricardo-carrillo-082117129/"
+                                )
+                            }
                         />
                         <img
                             src={require("../../assets/github.png")}
                             alt="My Github profile"
                             className="icon"
-                            onClick={() => openUrl('https://github.com/RicardoCarrillp')}
+                            onClick={() => openUrl("https://github.com/RicardoCarrillp")}
                         />
                     </div>
                 </div>
@@ -97,8 +158,14 @@ export const Home = () => {
                                     className="icon"
                                 />
                                 <h3>Experience</h3>
-                                <p>2+ years <br/>Frontend Development</p>
-                                <p>1 year <br/>backend Development</p>
+                                <p>
+                                    2+ years <br />
+                                    Frontend Development
+                                </p>
+                                <p>
+                                    1 year <br />
+                                    backend Development
+                                </p>
                             </div>
                             <div className="details-container">
                                 <img
@@ -112,107 +179,58 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-           
             </section>
             <section id="experience">
                 <p className="section__text__p1">Explore My</p>
                 <h1 className="title">Experience</h1>
                 <div className="experience-details-container">
-                        <div className="details-container">
-
-                            <Marquee direction="left" speed={100}  pauseOnClick={true} >
-                                {images.map(img=>(
-                                    <div className="image_wrapper">
-                                        <img src={img} alt="" />
-                                    </div>
-                                ))}
-                            </Marquee>
-                        </div>
-
+                    <div className="details-container">
+                        <Marquee direction="left" speed={100} pauseOnClick={true}>
+                            {images.map((img) => (
+                                <div key={img} className="image_wrapper">
+                                    <img src={img} alt="" />
+                                </div>
+                            ))}
+                        </Marquee>
+                    </div>
                 </div>
-            
             </section>
             <section id="projects">
                 <p className="section__text__p1">Browse My Recent</p>
                 <h1 className="title">Projects</h1>
                 <div className="experience-details-container">
                     <div className="about-containers">
-                        <div className="details-container color-container">
-                            <div className="article-container">
-                                {/*<img*/}
-                                {/*    src={require("../../assets/covid.png")}*/}
-                                {/*    alt="Project 1"*/}
-                                {/*    className="project-img"*/}
-                                {/*/>*/}
-                            </div>
-                            <h2 className="experience-sub-title project-title">Covid Stats</h2>
-                            <div className="btn-container">
-                                <button
-                                    className="btn btn-color-2 project-btn"
-                                    onClick={()=>openUrl("https://github.com/RicardoCarrillp/covid-test")}                                >
-                                    Github
-                                </button>
-                                <button
-                                    className="btn btn-color-2 project-live"
-                                    onClick={()=>openUrl("https://covid-test-beta.vercel.app/login")}
+                        {projects.map((project) => (
+                            <div key={project.title} className="details-container color-container">
+                                <div className="article-container"></div>
+                                <h2 className="experience-sub-title project-title">
+                                    {project.title}
+                                </h2>
+                                <div className="framework-tech">
+                                    Technologies:
+                                    {project.techImgs.map((tech) => (
+                                        <img key={tech} src={tech} alt="Angular" />
+                                    ))}
+                                </div>
 
-                                >
-                                    Live Demo
-                                </button>
+                                <div className="btn-container">
+                                    <button
+                                        className="btn btn-color-2 project-btn"
+                                        onClick={() => openUrl(project.githubUrl)}
+                                    >
+                                        Github
+                                    </button>
+                                    <button
+                                        className="btn btn-color-2 project-live"
+                                        onClick={() => openUrl(project.url)}
+                                    >
+                                        Live Demo
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div className="details-container color-container">
-                            <div className="article-container">
-                                {/*<img*/}
-                                {/*    src="./assets/project-2.png"*/}
-                                {/*    alt="Project 2"*/}
-                                {/*    className="project-img"*/}
-                                {/*/>*/}
-                            </div>
-                            <h2 className="experience-sub-title project-title">Contact book</h2>
-                            <div className="btn-container">
-                                <button
-                                    className="btn btn-color-2 project-btn"
-                                    onClick={()=>openUrl("https://github.com/RicardoCarrillp/contacts_frontendt")}                                >
-                                    Github
-                                </button>
-                                <button
-                                    className="btn btn-color-2 project-live"
-                                    onClick={()=>openUrl("https://contacts-frontend-gamma.vercel.app/contacts")}
-                                >
-                                    Live Demo
-                                </button>
-                            </div>
-                        </div>
-                        <div className="details-container color-container">
-                            <div className="article-container">
-                                {/*<img*/}
-                                {/*    src={require("../../assets/rick.png")}*/}
-                                {/*    alt="Project 3"*/}
-                                {/*    className="project-img"*/}
-                                {/*/>*/}
-                            </div>
-                            <h2 className="experience-sub-title project-title">Rick and Morty App</h2>
-                            <div className="btn-container">
-                                <button
-                                    className="btn btn-color-2 project-btn"
-                                    onClick={()=>openUrl("https://github.com/RicardoCarrillp/RickandMorty\n")}
-
-                                >
-                                    Github
-                                </button>
-                                <button
-                                    className="btn btn-color-2 project-live"
-                                    // onclick="location.href='https://github.com/'"
-                                    onClick={()=>openUrl("https://rickand-morty-delta.vercel.app/home")}
-                                >
-                                    Live Demo
-                                </button>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
-          
             </section>
             <section id="contact">
                 <p className="section__text__p1">Get in Touch</p>
@@ -220,19 +238,27 @@ export const Home = () => {
                 <div className="contact-info-upper-container">
                     <div className="contact-info-container">
                         <img
-                            src={require('../../assets/email.png')}
+                            src={require("../../assets/email.png")}
                             alt="Email icon"
                             className="icon contact-icon email-icon"
                         />
-                        <p><a href="mailto:carrilloricki2211@gmail.com">carrilloricki2211@gmail.com</a></p>
+                        <p>
+                            <a href="mailto:carrilloricki2211@gmail.com">
+                                carrilloricki2211@gmail.com
+                            </a>
+                        </p>
                     </div>
                     <div className="contact-info-container">
                         <img
-                            src={require('../../assets/linkedin.png')}
+                            src={require("../../assets/linkedin.png")}
                             alt="LinkedIn icon"
                             className="icon contact-icon"
                         />
-                        <p><a href="https://www.linkedin.com/in/ricardo-carrillo-082117129/">LinkedIn</a></p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/ricardo-carrillo-082117129/">
+                                LinkedIn
+                            </a>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -240,10 +266,18 @@ export const Home = () => {
                 <nav>
                     <div className="nav-links-container">
                         <ul className="nav-links">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#experience">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
