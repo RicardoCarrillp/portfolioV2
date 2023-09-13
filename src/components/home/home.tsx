@@ -199,7 +199,7 @@ export const Home = () => {
                         <Marquee direction="left" speed={100} pauseOnClick={true}>
                             {images.map((img) => (
                                 <div key={img} className="image_wrapper">
-                                    <img src={img} alt="" />
+                                    <img src={img} alt="img" />
                                 </div>
                             ))}
                         </Marquee>
