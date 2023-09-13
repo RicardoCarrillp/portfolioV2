@@ -10,36 +10,47 @@ export const Home = () => {
         , require('../../assets/nodejs.png')
         , require('../../assets/sass.png')
         , require('../../assets/html.png')
+        , require('../../assets/tailwind.png')
     ]
 
     const projects = [
-      {
-        title: "Covid Stats",
-        techImgs: [require("../../assets/angular.png")],
-        githubUrl: "https://github.com/RicardoCarrillp/covid-test",
-        url: "https://covid-test-beta.vercel.app/login",
-      },
-      {
-        title: "Contact book",
-        techImgs: [
-          require("../../assets/angular.png"),
-          require("../../assets/nodejs.png"),
-        ],
-        githubUrl: "https://github.com/RicardoCarrillp/contacts_frontendt",
-        url: "https://github.com/RicardoCarrillp/contacts_frontendt",
-      },
-      {
-        title: "Pokedex",
-        techImgs: [require("../../assets/React-icon.png")],
-        githubUrl: "https://github.com/RicardoCarrillp/pokedex",
-        url: "https://pokedex-v22.vercel.app/",
-      },
-      {
-        title: "Rick and Morty App",
-        techImgs: [require("../../assets/angular.png")],
-        githubUrl: "https://github.com/RicardoCarrillp/RickandMorty",
-        url: "https://rickand-morty-delta.vercel.app/home",
-      },
+        {
+            title: "Covid Stats",
+            techImgs: [require("../../assets/angular.png")],
+            githubUrl: "https://github.com/RicardoCarrillp/covid-test",
+            url: "https://covid-test-beta.vercel.app/login",
+        },
+        {
+            title: "Contact book",
+            techImgs: [
+                require("../../assets/angular.png"),
+                require("../../assets/nodejs.png"),
+            ],
+            githubUrl: "https://github.com/RicardoCarrillp/contacts_frontendt",
+            url: "https://github.com/RicardoCarrillp/contacts_frontendt",
+        },
+        {
+            title: "Rick and Morty App",
+            techImgs: [require("../../assets/angular.png")],
+            githubUrl: "https://github.com/RicardoCarrillp/RickandMorty",
+            url: "https://rickand-morty-delta.vercel.app/home",
+        },
+        {
+            title: "Pokedex",
+            techImgs: [require("../../assets/React-icon.png")],
+            githubUrl: "https://github.com/RicardoCarrillp/pokedex",
+            url: "https://pokedex-v22.vercel.app/",
+        },
+        {
+            title: "Rock Paper Scissors Game",
+            techImgs: [
+                require("../../assets/React-icon.png"),
+                require("../../assets/tailwind.png")
+            ],
+            githubUrl: "https://github.com/RicardoCarrillp/rock-paper-scissors",
+            url: "https://rock-paper-scissors-dusky-gamma.vercel.app/",
+        },
+
     ];
 
     function toggleMenu() {
