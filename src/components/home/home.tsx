@@ -48,7 +48,7 @@ export const Home = () => {
                 require("../../assets/tailwind.png")
             ],
             githubUrl: "https://github.com/RicardoCarrillp/rock-paper-scissors",
-            url: "https://rock-paper-scissors-dusky-gamma.vercel.app/",
+            url: "https://rock-paper-scissors-v1.vercel.app/",
         },
 
     ];
