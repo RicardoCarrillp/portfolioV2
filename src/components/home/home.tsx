@@ -6,6 +6,7 @@ export const Home = () => {
     const profile = require('../../assets/profile.png')
     const images = [require('../../assets/js.png')
         , require('../../assets/angular.png')
+        , require('../../assets/ionic.png')
         , require('../../assets/React-icon.png')
         , require('../../assets/nodejs.png')
         , require('../../assets/sass.png')
@@ -38,6 +39,15 @@ export const Home = () => {
         {
             title: "Pokedex",
             techImgs: [require("../../assets/React-icon.png")],
+            githubUrl: "https://github.com/RicardoCarrillp/pokedex",
+            url: "https://pokedex-v22.vercel.app/",
+        },
+        {
+            title: "Flappy Bird",
+            techImgs: [
+                require("../../assets/angular.png"),
+                require("../../assets/ionic.png")
+            ],
             githubUrl: "https://github.com/RicardoCarrillp/pokedex",
             url: "https://pokedex-v22.vercel.app/",
         },
