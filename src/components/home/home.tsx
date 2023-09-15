@@ -139,7 +139,7 @@ export const Home = () => {
                             className="btn btn-color-2"
                             onClick={() => {
                                 window.open(
-                                    require("../../assets/Curriculum Ricardo Carrillo - ES.pdf")
+                                    require("../../assets/Curriculum Ricardo Carrillo - EN.pdf")
                                 );
                             }}
                         >
