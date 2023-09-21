@@ -48,8 +48,8 @@ export const Home = () => {
                 require("../../assets/angular.png"),
                 require("../../assets/ionic.png")
             ],
-            githubUrl: "https://github.com/RicardoCarrillp/pokedex",
-            url: "https://pokedex-v22.vercel.app/",
+            githubUrl: "https://github.com/RicardoCarrillp/flappyBird",
+            url: "https://flappy-birdv1.vercel.app/home",
         },
         {
             title: "Rock Paper Scissors Game",
